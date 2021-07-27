@@ -1,5 +1,4 @@
 # Alt-instagram
----
 
 
 Alt-instagram is a way better version of instagram web client.
@@ -10,7 +9,7 @@ MIT license
 🔥 New technologies 🔥
 
 ## Contribute
----
+
 
 ## Installation
----
+
