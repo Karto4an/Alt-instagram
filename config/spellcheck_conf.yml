@@ -11,7 +11,8 @@ matrix:
   - pyspelling.filters.html:
     comments: false
     ignores:
-    - example
+    - JS
+    - instagram
   sources:
   - '**/*.md'
   default_encoding: utf-8
