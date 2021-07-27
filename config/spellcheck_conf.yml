@@ -9,8 +9,8 @@ matrix:
   pipeline:
   - pyspelling.filters.markdown:
     ignores:
-    - 'JS'
-    - 'instagram'
+    - JS
+    - instagram
   - pyspelling.filters.html:
     comments: false
     ignores:
