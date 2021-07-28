@@ -1,38 +1,40 @@
 header{
-  height: 56px;
+  height: 54px;
   border-bottom: 1px solid rgb(220, 220, 220);
   display: grid;
   /* grid-template-columns: min-content; */
-  justify-content: center;
+  padding-left: 16vw;
+  padding-right: 16vw;
 }
 nav{
-  height: 56px;
+  height: 54px;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: min-content 1fr min-content 1fr min-content min-content min-content min-content min-content;
+  grid-gap: 25px;
 }
 .nav-svg{
-  height: calc(56px*0.85);
+  height: calc(54px*0.5);
 }
 .header-logo{
   grid-column: 1;
 }
 .nav-search{
-  grid-column: 2;
-}
-.nav-home{
   grid-column: 3;
 }
-.nav-messages{
-  grid-column: 4;
-}
-.nav-upload{
+.nav-home{
   grid-column: 5;
 }
-.nav-notification{
+.nav-messages{
   grid-column: 6;
 }
-.nav-account{
+.nav-upload{
   grid-column: 7;
+}
+.nav-notification{
+  grid-column: 8;
+}
+.nav-account{
+  grid-column: 9;
 }
 .header-element{
   align-self: center;
