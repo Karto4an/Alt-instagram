@@ -1,4 +1,40 @@
 header{
   height: 56px;
   border-bottom: 1px solid rgb(220, 220, 220);
+  display: grid;
+  /* grid-template-columns: min-content; */
+  justify-content: center;
+}
+nav{
+  height: 56px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.nav-svg{
+  height: calc(56px*0.85);
+}
+.header-logo{
+  grid-column: 1;
+}
+.nav-search{
+  grid-column: 2;
+}
+.nav-home{
+  grid-column: 3;
+}
+.nav-messages{
+  grid-column: 4;
+}
+.nav-upload{
+  grid-column: 5;
+}
+.nav-notification{
+  grid-column: 6;
+}
+.nav-account{
+  grid-column: 7;
+}
+.header-element{
+  align-self: center;
+  margin: 0 auto;
 }
