@@ -40,3 +40,23 @@ nav{
   align-self: center;
   margin: 0 auto;
 }
+.post{
+  background-color: darkkhaki;
+  width: 66%;
+  height: min-content;
+  width: min-content;
+}
+.post-picture-container{
+  width: min-content;
+}
+.post-author{
+  width: min-content;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+}
+.post-author-profilepic{
+  height: 100%;
+  width: 48px;
+  border-radius: 50%;
+  background-color: darkturquoise;
+}
