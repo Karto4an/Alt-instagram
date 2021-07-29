@@ -15,8 +15,12 @@ nav{
 .nav-svg{
   height: calc(54px*0.5);
 }
-.header-logo{
+.header-logo-container{
   grid-column: 1;
+}
+.header-logo{
+  height: 48px;
+  width: 48px;
 }
 .nav-search{
   grid-column: 3;
@@ -51,12 +55,12 @@ nav{
 }
 .post-author{
   width: min-content;
+  height: 60px;
   display: grid;
   grid-template-columns: repeat(3, min-content);
 }
 .post-author-profilepic{
   height: 100%;
-  width: 48px;
   border-radius: 50%;
   background-color: darkturquoise;
 }
