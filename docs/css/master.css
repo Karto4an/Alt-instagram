@@ -1,4 +1,4 @@
-header{
+.header{
   height: 54px;
   border-bottom: 1px solid rgb(220, 220, 220);
   display: grid;
@@ -53,14 +53,28 @@ nav{
 .post-picture-container{
   width: min-content;
 }
+.post-header{
+  display: grid;
+  grid-template-columns: min-content min-content;
+}
 .post-author{
+  grid-column: 1;
   width: min-content;
   height: 60px;
   display: grid;
   grid-template-columns: repeat(3, min-content);
 }
 .post-author-profilepic{
-  height: 100%;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background-color: darkturquoise;
+}
+.post-buttons-moreoptions-container{
+  display: flex;
+}
+.post-buttons-moreoptions{
+  grid-column: 2;
+  width: 18px;
+  height: 18px;
 }
