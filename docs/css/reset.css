@@ -7,3 +7,11 @@ a{
 p{
   margin: 0;
 }
+button{
+  padding: 0;
+  border: none;
+  background: none;
+}
+address{
+  font-style: normal;
+}
