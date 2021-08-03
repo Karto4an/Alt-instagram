@@ -88,3 +88,15 @@ nav{
   width: 20px;
   height: 20px;
 }
+.post-buttons-container{
+  height: 40px;
+}
+.post-buttons{
+  height: 100%;
+}
+.post-buttons-svg{
+  height: 75%;
+}
+.post-addfav-button-container{
+  float: right;
+}
