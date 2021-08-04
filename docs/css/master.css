@@ -93,10 +93,12 @@ nav{
 }
 .post-buttons{
   height: 100%;
+  margin-left: 5px;
 }
 .post-buttons-svg{
   height: 75%;
 }
 .post-addfav-button-container{
   float: right;
+  margin-right: 6px;
 }
