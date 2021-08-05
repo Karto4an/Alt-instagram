@@ -135,3 +135,17 @@ nav{
   align-self: end;
   margin: 4px auto auto auto;
 }
+.short-videos-left-arrow{
+  position: fixed;
+  min-width: 18px;
+  height: 18px;
+  transform: translateY(200%);
+  background-image: url(../img/svg/left-arrow.svg);
+}
+.short-videos-right-arrow{
+  position: fixed;
+  min-width: 32px;
+  height: 32px;
+  transform: translateY(100%);
+  /* background-color: turquoise; */
+}
