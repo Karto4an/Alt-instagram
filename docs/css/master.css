@@ -109,10 +109,16 @@ nav{
   max-width: 615px;
   border-radius: 3px;
   display: flex;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+}
+.short-videos-bar::-webkit-scrollbar{
+  display: none;
 }
 .short-videos-block{
   min-width: 80px;
   height: 100%;
+  display: flex;
 }
 .short-videos-block-pic{
   width: 58px;
@@ -120,4 +126,6 @@ nav{
   background-image: url(../img/profilepic.png);
   border-radius: 50%;
   background-repeat: no-repeat;
+  margin: auto;
+  align-self: center;
 }
