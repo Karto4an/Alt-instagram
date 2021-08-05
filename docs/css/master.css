@@ -47,7 +47,7 @@ nav{
 .post{
   background-color: darkkhaki;
   height: min-content;
-  width: min-content;
+  max-width: 615px;
   border-radius: 3px;
 }
 .post-picture-container{
@@ -101,4 +101,23 @@ nav{
 .post-addfav-button-container{
   float: right;
   margin-right: 6px;
+}
+
+.short-videos-bar{
+  background-color: indianred;
+  height: 115px;
+  max-width: 615px;
+  border-radius: 3px;
+  display: flex;
+}
+.short-videos-block{
+  min-width: 80px;
+  height: 100%;
+}
+.short-videos-block-pic{
+  width: 58px;
+  height: 58px;
+  background-image: url(../img/profilepic.png);
+  border-radius: 50%;
+  background-repeat: no-repeat;
 }
