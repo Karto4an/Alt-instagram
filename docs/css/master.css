@@ -49,6 +49,7 @@ nav{
   height: min-content;
   max-width: 615px;
   border-radius: 3px;
+  margin-top: 24px;
 }
 .post-picture-container{
   width: min-content;
@@ -119,13 +120,18 @@ nav{
   min-width: 80px;
   height: 100%;
   display: flex;
+  flex-direction: column;
 }
 .short-videos-block-pic{
   width: 58px;
   height: 58px;
-  background-image: url(../img/profilepic.png);
+  background-image: url(../img/profilepic-videos.png);
   border-radius: 50%;
   background-repeat: no-repeat;
-  margin: auto;
+  margin-top: auto;
   align-self: center;
+}
+.short-videos-block-author{
+  align-self: end;
+  margin: 4px auto auto auto;
 }
