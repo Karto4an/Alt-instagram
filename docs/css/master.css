@@ -192,3 +192,12 @@ aside{
 .credits a:visited{
   color: rgb(128, 128, 128);
 }
+.aside-suggestion header{
+  display: flex;
+}
+.aside-suggestion header h2{
+  font-size: 16px;
+}
+.aside-suggestion a{
+  margin-left: auto;
+}
