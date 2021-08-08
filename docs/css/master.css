@@ -112,6 +112,7 @@ nav{
   display: flex;
   overflow-x: scroll;
   scrollbar-width: thin;
+  margin-top: 30px;
 }
 .short-videos-bar::-webkit-scrollbar{
   display: none;
@@ -135,17 +136,31 @@ nav{
   align-self: end;
   margin: 4px auto auto auto;
 }
-.short-videos-left-arrow{
-  position: fixed;
-  min-width: 18px;
-  height: 18px;
-  transform: translateY(200%);
-  background-image: url(../img/svg/left-arrow.svg);
+.short-videos-arrows{
+  position: absolute;
+  min-width: 615px;
+  height: 115px;
+  display: grid;
+  grid-template-columns: 18px 1fr 18px;
+  pointer-events: none;
 }
-.short-videos-right-arrow{
-  position: fixed;
-  min-width: 32px;
-  height: 32px;
-  transform: translateY(100%);
-  /* background-color: turquoise; */
+.short-videos-arrows button{
+  width: 24px;
+  height: 24px;
+}
+.short-videos-arrows .l{
+  grid-column: 1;
+  align-self: center;
+  background-image: url(../img/svg/left-arrow.svg);
+  margin-bottom: 16px;
+  cursor: pointer;
+  pointer-events: all;
+}
+.short-videos-arrows .r{
+  grid-column: -1;
+  align-self: center;
+  background-image: url(../img/svg/right-arrow.svg);
+  margin-bottom: 16px;
+  cursor: pointer;
+  pointer-events: all;
 }
