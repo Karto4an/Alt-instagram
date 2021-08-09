@@ -51,7 +51,7 @@ main{
   margin-right: auto;
   display: grid;
   grid-template-columns: min-content min-content;
-  grid-template-rows: min-content min-content min-content;
+  grid-template-rows: 115px min-content min-content;
 }
 .post{
   background-color: darkkhaki;
@@ -60,6 +60,7 @@ main{
   border-radius: 3px;
   grid-column: 1;
   grid-row: 2;
+  margin-top: 24px;
 }
 .post-picture-container{
   width: min-content;
@@ -198,6 +199,30 @@ aside{
 .aside-suggestion header h2{
   font-size: 16px;
 }
-.aside-suggestion a{
+.aside-suggestion header a{
   margin-left: auto;
+}
+.aside-suggestion-list div{
+  max-height: 64px;
+  display: flex;
+  align-items: center;
+}
+.aside-suggestion-list img{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.aside-suggestion-list span{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+small{
+  font-size: 12px;
+}
+.aside-suggestion-list button{
+  margin-left: auto;
+}
+.aside-suggestion-list li{
+  margin-top: 12px;
 }
