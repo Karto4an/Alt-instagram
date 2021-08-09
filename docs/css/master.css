@@ -55,7 +55,7 @@ main{
 }
 .post{
   background-color: darkkhaki;
-  height: min-content;
+  height: max-content;
   max-width: 615px;
   border-radius: 3px;
   grid-column: 1;
