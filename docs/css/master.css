@@ -24,6 +24,11 @@ nav{
 }
 .nav-search{
   grid-column: 3;
+  display: flex;
+}
+.nav-search input{
+  height: 75%;
+  margin: auto 0 auto 0;
 }
 .nav-home{
   grid-column: 5;
@@ -159,8 +164,8 @@ main{
   pointer-events: none;
 }
 .short-videos-arrows button{
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
 }
 .short-videos-arrows .l{
   grid-column: 1;
@@ -225,4 +230,7 @@ small{
 }
 .aside-suggestion-list li{
   margin-top: 12px;
+}
+img{
+  vertical-align: top;
 }
