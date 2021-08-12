@@ -105,6 +105,9 @@ main{
   width: 20px;
   height: 20px;
 }
+.post-footer{
+  padding: 4px 8px 2px 8px;
+}
 .post-buttons-container{
   height: 40px;
 }
@@ -118,6 +121,11 @@ main{
 .post-addfav-button-container{
   float: right;
   margin-right: 6px;
+}
+.post-text{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .short-videos-bar{
@@ -202,10 +210,12 @@ aside{
   display: flex;
 }
 .aside-suggestion header h2{
-  font-size: 16px;
+  font-size: 15px;
+  color: rgb(70, 70, 70);
 }
 .aside-suggestion header a{
   margin-left: auto;
+  color: rgb(0, 120, 245);
 }
 .aside-suggestion-list div{
   max-height: 64px;
@@ -227,9 +237,13 @@ small{
 }
 .aside-suggestion-list button{
   margin-left: auto;
+  color: rgb(0, 120, 245);
 }
 .aside-suggestion-list li{
   margin-top: 12px;
+}
+ul{
+  padding-left: 6px;
 }
 img{
   vertical-align: top;
