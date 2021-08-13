@@ -248,3 +248,7 @@ ul{
 img{
   vertical-align: top;
 }
+#postbutt{
+  padding: 25px 25px 25px 25px;
+  border: black solid 3px;
+}

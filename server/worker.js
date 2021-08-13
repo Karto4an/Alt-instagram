@@ -7,29 +7,29 @@ const port = 80;
 const server = http.createServer((req, res) => {
     console.log(req.url)
     console.log(req.method)
-    console.log(req.headers)
-    let ua = req.headers['user-agent']
+    // console.log(req.headers)
+    // console.log(req)
     res.charset = 'UTF-8';
 
     if (req.url === '/') {
-        if (req.headers['accept'].match('image/webp')) {
-            res.writeHead(200, {'Content-Type': 'text/plain'})
-            res.write('WebP supported\n');
+        if (req.method == 'POST') {
+            req.on('data', function(chunk) {
+              console.log("Received body data:");
+              console.log(chunk.toString());
+            });
         }
-        else {
-            res.writeHead(200, {'Content-Type': 'text/plain'})
-            res.write('No WebP support\n');
-        }
-        res.write('----RESPONSE END----')
 
-        res.end();
-    }
-    else {
-        res.writeHead(404, {'Content-Type': 'text/plain'})
-        res.end('Error 404 Not Found');
-        console.log(`404: ${req.url}`)
-    }
+        let data = {
+            username: "Karto4an",
+            age: 30,
+        };
 
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept');
+        res.setHeader("Content-Type", "application/json");
+        res.end(JSON.stringify(data));
+
+    }
 });
 
 server.listen(port, hostname, () => {
