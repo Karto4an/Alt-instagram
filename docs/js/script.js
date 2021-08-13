@@ -18,10 +18,13 @@ var data = `{
   "Quantity": 1,
   "Price": 18.00
 }`;
+// var photoId = getCookie("user");
+xhr.setRequestHeader("purpose", "feed");
+xhr.send(data);
 
 const feed = document.getElementById('feed');
 var step;
-for (step = 0; step < 5; step++) {
+for (step = 0; step < 1; step++) {
     feed.innerHTML += `
     <article class="post">
     <header class="post-header">
@@ -63,7 +66,10 @@ for (step = 0; step < 5; step++) {
             </article>
         </section>
     </footer>
-    </article>`;}
+    </article>`
+};
 
-
-xhr.send(data);
+window.onload = function () {
+    let body = document.getElementsByTagName('body')[0];
+    console.log(body.clientHeight);
+};

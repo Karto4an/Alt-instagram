@@ -7,7 +7,7 @@ const port = 80;
 const server = http.createServer((req, res) => {
     console.log(req.url)
     console.log(req.method)
-    // console.log(req.headers)
+    console.log(req.headers)
     // console.log(req)
     res.charset = 'UTF-8';
 
@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
         };
 
         res.setHeader('Access-Control-Allow-Origin', '*');
-        res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept');
+        res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept, purpose');
         res.setHeader("Content-Type", "application/json");
         res.end(JSON.stringify(data));
 
