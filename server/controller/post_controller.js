@@ -13,6 +13,10 @@ class PostController {
         const posts = await db.query(`SELECT * FROM post WHERE user_id = $1`, [id])
         res.json(posts.rows)
     }
+
+    async testPosts(req, res) {
+
+    }
 }
 
 module.exports = new PostController()
