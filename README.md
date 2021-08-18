@@ -9,7 +9,7 @@ MIT license<BR>
 🔥 New technologies 🔥
 
 ## Contribute
-
+Fork then pull
 
 ## Installation
 
