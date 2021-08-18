@@ -7,8 +7,10 @@ create TABLE author(
 
 create TABLE post(
     id UUID PRIMARY KEY,
-    userid UUID,
+    author_id INT,
     image_url VARCHAR,
-    likes VARCHAR,
-    FOREIGN KEY (userid) REFERENCES author (id)
+	date_created TIMESTAMPTZ,
+    likes_num VARCHAR,
+    likes_id VARCHAR[],
+    FOREIGN KEY (author_id) REFERENCES user_data (id)
 );
