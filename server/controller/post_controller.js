@@ -15,7 +15,13 @@ class PostController {
     }
 
     async testPosts(req, res) {
-
+        res.json({
+            "profile_pic_url": "img/profilepic.webp",
+            "username": "Karto4an",
+            "img_url": "img/test-pic.webp",
+            "likes_num": "1",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae aliquid facilis aut, praesentium tempore sequi quasi inventore commodi, nostrum vel, quo debitis impedit voluptatem? Quos dolorum quisquam recusandae qui?"
+        })
     }
 }
 
