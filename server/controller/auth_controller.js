@@ -17,7 +17,8 @@ class AuthController {
                 // res.send('Success')
                 const user = {username: username, pswd: pswd}
                 const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET)
-                res.json({accessToken: accessToken})
+                // res.json({accessToken: accessToken})
+                res.cookie('sessionToken', accessToken, { maxAge: 900000, httpOnly: true });
 
             } else {
                 res.send('Not Allowed!')
@@ -29,14 +30,34 @@ class AuthController {
     }
 
     async checkSessionToken(req, res) {
-        const authHeader = req.headers['authorization']
-        const token = authHeader && authHeader.split(' ')[1]
-        if (token == null) return res.sendStatus(401)
+        if (req.headers['authorization']) {
+            const authHeader = req.headers['authorization']
+            const token = authHeader && authHeader.split(' ')[1]
 
-        jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
-            if (err) return res.sendStatus(403)
-            req.user = user
-        })
+            if (token == null) return res.sendStatus(401)
+
+            jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+                if (err) return res.sendStatus(403)
+                req.user = user
+                res.send('OK')
+            })
+
+        } else {
+            if (req.cookies.sessionToken === undefined) {
+                res.sendStatus(401)
+            } else {
+                const token = req.cookies.sessionToken
+
+                if (token == null) return res.sendStatus(401)
+
+                jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+                    if (err) return res.sendStatus(403)
+                    req.user = user
+                    res.send('OK')
+                })
+            }
+        }
+
     }
 
     async removeSessionToken(req, res) {

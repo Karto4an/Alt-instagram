@@ -13,13 +13,19 @@ xhr.onreadystatechange = function () {
       console.log(xhr.status);
     //   console.log(xhr.responseText);
     post = JSON.parse(xhr.responseText);
-    console.log(post);
-    writePost();
+    console.log(ObjectLength(post));
+
    }};
 
-xhr.send()
+xhr.send();
 
 const writePost = function () {
+    const pic_url = post['post1'][0].profile_pic_url;
+    const author_username = post['post1'][0].username;
+    const img_url = post['post1'][0].img_url;
+    const likes_num = post['post1'][0].likes_num;
+    const description = post['post1'][0].description;
+
     const feed = document.getElementById('feed');
     var step;
     for (step = 0; step < 1; step++) {
@@ -27,15 +33,15 @@ const writePost = function () {
         <article class="post">
         <header class="post-header">
             <address class="post-author">
-                <img src="${post.profile_pic_url}" alt="" class="post-author-profilepic">
-                <span class="post-author-username"><a href="">${post.username}</a></span>
+                <img src="${pic_url}" alt="" class="post-author-profilepic">
+                <span class="post-author-username"><a href="">${author_username}</a></span>
             </address>
             <button class="post-buttons-moreoptions-container" title="More post options">
                 <img src="img/svg/more.svg" alt="" class="post-buttons-moreoptions">
             </button>
         </header>
         <section class="post-picture-container">
-            <img src="${post.img_url}" alt="BLANK">
+            <img src="${img_url}" alt="BLANK">
         </section>
         <footer class="post-footer">
             <section class="post-buttons-container">
@@ -52,20 +58,30 @@ const writePost = function () {
                     <img src="img/svg/bookmark.svg" alt="" class="post-addfav-button post-buttons-svg">
                 </button>
             </section>
-            <span><b>${post.likes_num} like</b></span>
+            <span><b>${likes_num} like</b></span>
             <section class="post-text-container">
                 <article>
                     <div>
                         <address>
                             <a href="">Karto4an</a>
                         </address>
-                        <p class="post-text">${post.description}</p>
+                        <p class="post-text">${description}</p>
                     </div>
                 </article>
             </section>
         </footer>
         </article>`
     };
+};
+
+function ObjectLength( object ) {
+    var length = 0;
+    for( var key in object ) {
+        if( object.hasOwnProperty(key) ) {
+            ++length;
+        }
+    }
+    return length;
 };
 
 window.onload = function () {
