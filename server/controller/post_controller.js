@@ -17,18 +17,25 @@ class PostController {
     async testPosts(req, res) {
         res.json(
         {
-            "post1": [{
+            0: [{
                 "profile_pic_url": "img/profilepic.webp",
                 "username": "Karto4an",
                 "img_url": "img/test-pic.webp",
-                "likes_num": "56",
+                "likes_num": "52",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae aliquid facilis aut, praesentium tempore sequi quasi inventore commodi, nostrum vel, quo debitis impedit voluptatem? Quos dolorum quisquam recusandae qui?"
             }],
-            "post2": [{
+            1: [{
                 "profile_pic_url": "img/profilepic.webp",
                 "username": "Karto4an",
                 "img_url": "img/test-pic.webp",
-                "likes_num": "56",
+                "likes_num": "33",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae aliquid facilis aut, praesentium tempore sequi quasi inventore commodi, nostrum vel, quo debitis impedit voluptatem? Quos dolorum quisquam recusandae qui?"
+            }],
+            2: [{
+                "profile_pic_url": "img/profilepic.webp",
+                "username": "Karto4an",
+                "img_url": "img/test-pic.webp",
+                "likes_num": "12",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae aliquid facilis aut, praesentium tempore sequi quasi inventore commodi, nostrum vel, quo debitis impedit voluptatem? Quos dolorum quisquam recusandae qui?"
             }]
 

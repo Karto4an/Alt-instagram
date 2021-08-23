@@ -12,19 +12,29 @@ xhr.onreadystatechange = function () {
    if (xhr.readyState === 4) {
       console.log(xhr.status);
     //   console.log(xhr.responseText);
-    post = JSON.parse(xhr.responseText);
-    console.log(ObjectLength(post));
+    post = Object.values(JSON.parse(xhr.responseText));
+    console.log(post);
+    lenght = ObjectLength(post);
 
-   }};
+    var i;
+    for (i = 0; i < lenght; i++){
+        console.log(`${i} attempt`);
+
+        console.log(post[i][0]);
+        writePost(post[i][0]);
+    }
+
+    }};
 
 xhr.send();
 
-const writePost = function () {
-    const pic_url = post['post1'][0].profile_pic_url;
-    const author_username = post['post1'][0].username;
-    const img_url = post['post1'][0].img_url;
-    const likes_num = post['post1'][0].likes_num;
-    const description = post['post1'][0].description;
+function writePost(postToRender) {
+    console.log(postToRender)
+    const pic_url = postToRender.profile_pic_url;
+    const author_username = postToRender.username;
+    const img_url = postToRender.img_url;
+    const likes_num = postToRender.likes_num;
+    const description = postToRender.description;
 
     const feed = document.getElementById('feed');
     var step;
