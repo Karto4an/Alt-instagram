@@ -29,9 +29,9 @@
             <a href="pages/static/notification.html" class="nav-notification header-element">
                 <img src="img/svg/notification.svg" alt="Notifications" class="nav-svg">
             </a>
-            <a href="pages/static/account.html" class="nav-account header-element">
+            <button onclick="login()" class="nav-account header-element">
                 <img src="img/svg/user.svg" alt="Account" class="nav-svg">
-            </a>
+            </button>
         </nav>
     </header>
     <main>
@@ -182,6 +182,8 @@
         </aside>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+	<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
     <script src="js/script.js"></script>
     <script src="js/scroll.js"></script>
 </body>

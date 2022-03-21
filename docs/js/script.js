@@ -1,32 +1,20 @@
-var url = "http://127.0.0.1:8080/api/post/test";
+Moralis.initialize("wC93MGH0kZJ6Gc6pu72XdkDbkdbbTc3l6ZmgGJWT");
+Moralis.serverURL = "https://etf331pjxe0y.usemoralis.com:2053/server";
 
-var xhr = new XMLHttpRequest();
-xhr.open("GET", url);
+async function login() {
+    console.log('Click!');
+    var user = await Moralis.Web3.authenticate({ signingMessage: "Log in to 100gram" });
 
-xhr.setRequestHeader("Accept", "application/json");
-xhr.setRequestHeader("Content-Type", "application/json");
+    if (user) {
+        console.log(user);
+        console.log(user.get("ethAddress"));
 
-var post;
-
-xhr.onreadystatechange = function () {
-   if (xhr.readyState === 4) {
-      console.log(xhr.status);
-    //   console.log(xhr.responseText);
-    post = Object.values(JSON.parse(xhr.responseText));
-    console.log(post);
-    lenght = ObjectLength(post);
-
-    var i;
-    for (i = 0; i < lenght; i++){
-        console.log(`${i} attempt`);
-
-        console.log(post[i][0]);
-        writePost(post[i][0]);
+        user.set("email", "test@test.test");
+        user.set("username", "Karto4an");
+        user.set("password", "12345678");
+        user.save();
     }
-
-    }};
-
-xhr.send();
+}
 
 function writePost(postToRender) {
     console.log(postToRender)
