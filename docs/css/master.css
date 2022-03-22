@@ -4,21 +4,24 @@
 
 .header {
   border-bottom: 1px solid #cecece;
-  height: 52.5px;
+  height: 55px;
 }
 .header nav {
   padding: 0 20px 0 20px;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 .nav-logo {
   margin-right: 24px;
+  height: 48px;
 }
 .wallet-address {
   margin-left: 24px;
 }
 .nav-links {
   margin-left: 24px;
+  height: 28px;
 }
 .header nav .search {
   margin: 0 auto 0 auto;
@@ -28,4 +31,5 @@
 .nav-container {
   margin-left: 16vw;
   margin-right: 16vw;
+  height: 100%;
 }
