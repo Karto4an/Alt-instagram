@@ -4,6 +4,7 @@
 
 .header {
   border-bottom: 1px solid #cecece;
+  height: 52.5px;
 }
 .header nav {
   padding: 0 20px 0 20px;
@@ -13,12 +14,18 @@
 .nav-logo {
   margin-right: 24px;
 }
+.wallet-address {
+  margin-left: 24px;
+}
 .nav-links {
   margin-left: 24px;
 }
 .header nav .search {
   margin: 0 auto 0 auto;
+  width: 180px;
+  height: 24px;
 }
 .nav-container {
-  padding: 0 16vw 0 16vw;
+  margin-left: 16vw;
+  margin-right: 16vw;
 }
