@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="image/png" sizes="16x16" rel="icon" href="img/test-pic.webp">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/master.bak.css">
+    <meta name="google-site-verification" content="yRrcHqJjqAFZ-qyMSZ_VdyBqrFh78dNFKQHN1IMsbl0" />
+    <title>Alt-instagram</title>
+</head>
+<body>
+
+
+
+    <header class="header">
+        <nav>
+            <a href="" class="header-logo-container header-element">
+                <img src="img/logo.png" alt="Logo" class="header-logo">
+            </a>
+            <form class="nav-search">
+                <input type="search" placeholder="Search">
+            </form>
+            <a href="pages/static/home.html" class="nav-home header-element">
+                <img src="img/svg/home.svg" alt="Home Page">
+            </a>
+            <a href="pages/static/messages.html" class="nav-messages header-element">
+                <img src="img/svg/messages.svg" alt="Messages">
+            </a>
+            <a href="pages/static/upload.html" class="nav-upload header-element">
+                <img src="img/svg/plus.svg" alt="Upload files">
+            </a>
+            <a href="pages/static/notification.html" class="nav-notification header-element">
+                <img src="img/svg/notification.svg" alt="Notifications">
+            </a>
+            <button onclick="login()" class="nav-account header-element">
+                <img src="img/svg/user.svg" alt="Account">
+            </button>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="short-videos-bar" id="videos-scroll">
+            <div class="short-videos-arrows">
+                <button class="l" title="Scroll left" id="sva_l"></button>
+                <button class="r" title="Scroll right" id="sva_r"></button>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+            <div class="short-videos-block">
+                <div class="short-videos-block-pic"></div>
+                <span class="short-videos-block-author">123</span>
+            </div>
+        </section>
+
+        <section id="feed">
+            <article class="post">
+                <header class="post-header">
+                    <address class="post-author">
+                        <img src="img/profilepic.webp" alt="" class="post-author-profilepic">
+                        <span class="post-author-username"><a href="">Karto4an</a></span>
+                    </address>
+                    <button class="post-buttons-moreoptions-container" title="More post options">
+                        <img src="img/svg/more.svg" alt="" class="post-buttons-moreoptions">
+                    </button>
+                </header>
+                <section class="post-picture-container">
+                    <img src="img/test-pic.webp" alt="BLANK">
+                </section>
+                <footer class="post-footer">
+                    <section class="post-buttons-container">
+                        <button class="post-buttons post-like-button-container" title="Like post">
+                            <img src="img/svg/heart.svg" alt="" class="post-like-button post-buttons-svg">
+                        </button>
+                        <button class="post-buttons post-comments-button-container" title="Comment post">
+                            <img src="img/svg/comments.svg" alt="" class="post-comments-button post-buttons-svg">
+                        </button>
+                        <button class="post-buttons post-share-button-container" title="Share post">
+                            <img src="img/svg/share.svg" alt="" class="post-share-button post-buttons-svg">
+                        </button>
+                        <button class="post-buttons post-addfav-button-container" title="Bookmark post">
+                            <img src="img/svg/bookmark.svg" alt="" class="post-addfav-button post-buttons-svg">
+                        </button>
+                    </section>
+                    <span><b>1 like</b></span>
+                    <section class="post-text-container">
+                        <article>
+                            <div>
+                                <address>
+                                    <a href="">Karto4an</a>
+                                </address>
+                                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae aliquid facilis aut, praesentium tempore sequi quasi inventore commodi, nostrum vel, quo debitis impedit voluptatem? Quos dolorum quisquam recusandae qui?</p>
+                            </div>
+                        </article>
+                    </section>
+                </footer>
+            </article>
+        </section>
+
+        <aside>
+            <section class="aside-suggestion">
+                <header>
+                    <h2>You May Be Interested In</h2>
+                    <a href="">More</a>
+                </header>
+                <ul class="aside-suggestion-list">
+                    <li>
+                        <div>
+                            <img src="img/profilepic.webp" alt="">
+                            <span>
+                                <a href="">User</a>
+                                <small>Followed by ... and ... more</small>
+                            </span>
+                            <button>Follow</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="img/profilepic.webp" alt="">
+                            <span>
+                                <a href="">User</a>
+                                <small>Followed by ... and ... more</small>
+                            </span>
+                            <button>Follow</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="img/profilepic.webp" alt="">
+                            <span>
+                                <a href="">User</a>
+                                <small>Followed by ... and ... more</small>
+                            </span>
+                            <button>Follow</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <section class="credits">
+                <p>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+                <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+                <p>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+            </section>
+        </aside>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+	<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
