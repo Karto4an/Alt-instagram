@@ -13,12 +13,12 @@
         <nav>
             <a href="#"><img src="img/logo.png" alt="AltInst Logo" width="48px" height="48px"></a>
             <input type="search" name="Search" placeholder="Search" class="search">
-            <p id="wallet-address">0xA69...614</p>
+            <p id="wallet-address">Not logged in</p>
             <a href="#"><img src="img/svg/home.svg" alt="Home Page"></a>
             <a href="#"><img src="img/svg/messages.svg" alt="Messages"></a>
             <a href="#"><img src="img/svg/plus.svg" alt="New Post"></a>
             <a href="#"><img src="img/svg/notification.svg" alt="Notification"></a>
-            <a href="#"><img src="img/svg/user.svg" alt="Your Account"></a>
+            <button title="Log in" onclick="login()"><img src="img/svg/user.svg" alt="Your Account"></button>
         </nav>
     </header>
     <main class="main-content">
@@ -100,5 +100,8 @@
         </aside>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+	<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

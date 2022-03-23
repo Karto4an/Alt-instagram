@@ -21,6 +21,9 @@
   height: 24px;
   justify-self: center;
 }
+#wallet-address {
+  width: max-content;
+}
 
 /* ************** */
 /*  SHORT VIDEOS  */
