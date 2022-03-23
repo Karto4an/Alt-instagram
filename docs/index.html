@@ -2,139 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link type="image/png" sizes="16x16" rel="icon" href="img/test-pic.webp">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltInst</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/master.css">
-    <meta name="google-site-verification" content="yRrcHqJjqAFZ-qyMSZ_VdyBqrFh78dNFKQHN1IMsbl0" />
-    <title>Alt-instagram</title>
 </head>
 <body>
     <header class="header">
         <nav>
-            <a href="" class="header-logo-container header-element">
-                <img src="img/logo.png" alt="Logo" class="header-logo">
-            </a>
-            <form class="nav-search">
-                <input type="search" placeholder="Search">
-            </form>
-            <a href="pages/static/home.html" class="nav-home header-element">
-                <img src="img/svg/home.svg" alt="Home Page" class="nav-svg">
-            </a>
-            <a href="pages/static/messages.html" class="nav-messages header-element">
-                <img src="img/svg/messages.svg" alt="Messages" class="nav-svg">
-            </a>
-            <a href="pages/static/upload.html" class="nav-upload header-element">
-                <img src="img/svg/plus.svg" alt="Upload files" class="nav-svg">
-            </a>
-            <a href="pages/static/notification.html" class="nav-notification header-element">
-                <img src="img/svg/notification.svg" alt="Notifications" class="nav-svg">
-            </a>
-            <button onclick="login()" class="nav-account header-element">
-                <img src="img/svg/user.svg" alt="Account" class="nav-svg">
-            </button>
+            <a href="#"><img src="img/logo.png" alt="AltInst Logo" width="48px" height="48px"></a>
+            <input type="search" name="Search" placeholder="Search" class="search">
+            <p id="wallet-address">Not logged in</p>
+            <a href="#"><img src="img/svg/home.svg" alt="Home Page"></a>
+            <a href="#"><img src="img/svg/messages.svg" alt="Messages"></a>
+            <a href="#"><img src="img/svg/plus.svg" alt="New Post"></a>
+            <a href="#"><img src="img/svg/notification.svg" alt="Notification"></a>
+            <button title="Log in" onclick="login()"><img src="img/svg/user.svg" alt="Your Account"></button>
         </nav>
     </header>
-    <main>
-        <section class="short-videos-bar" id="videos-scroll">
-            <div class="short-videos-arrows">
-                <button class="l" title="Scroll left" id="sva_l"></button>
-                <button class="r" title="Scroll right" id="sva_r"></button>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-            <div class="short-videos-block">
-                <div class="short-videos-block-pic"></div>
-                <span class="short-videos-block-author">123</span>
-            </div>
-        </section>
-
-        <section id="feed">
+    <main class="main-content">
+        <section class="feed">
+            <section class="short-videos-bar">
+                <div class="short-videos-block">
+                    <img src="img/profilepic-videos.png" alt="$user_pic">
+                    <span>Karto4an</span>
+                </div>
+            </section>
             <article class="post">
-                <header class="post-header">
-                    <address class="post-author">
-                        <img src="img/profilepic.webp" alt="" class="post-author-profilepic">
-                        <span class="post-author-username"><a href="">Karto4an</a></span>
-                    </address>
-                    <button class="post-buttons-moreoptions-container" title="More post options">
-                        <img src="img/svg/more.svg" alt="" class="post-buttons-moreoptions">
-                    </button>
+                <header>
+                    <img src="img/profilepic.png" alt="$username" class="post-profile-pic">
+                    <a href="$profile_url" class="post-username">Karto4an</a>
+                    <button class="post-more-btn"><img src="img/svg/more.svg" alt="More"></button>
                 </header>
-                <section class="post-picture-container">
-                    <img src="img/test-pic.webp" alt="BLANK">
-                </section>
-                <footer class="post-footer">
-                    <section class="post-buttons-container">
-                        <button class="post-buttons post-like-button-container" title="Like post">
-                            <img src="img/svg/heart.svg" alt="" class="post-like-button post-buttons-svg">
-                        </button>
-                        <button class="post-buttons post-comments-button-container" title="Comment post">
-                            <img src="img/svg/comments.svg" alt="" class="post-comments-button post-buttons-svg">
-                        </button>
-                        <button class="post-buttons post-share-button-container" title="Share post">
-                            <img src="img/svg/share.svg" alt="" class="post-share-button post-buttons-svg">
-                        </button>
-                        <button class="post-buttons post-addfav-button-container" title="Bookmark post">
-                            <img src="img/svg/bookmark.svg" alt="" class="post-addfav-button post-buttons-svg">
-                        </button>
+                <img src="img/test-pic.png" alt="BLANK" class="post-image">
+                <footer>
+                    <section class="post-controls">
+                        <button><img src="img/svg/heart.svg" alt=""></button>
+                        <button><img src="img/svg/comments.svg" alt=""></button>
+                        <button><img src="img/svg/share.svg" alt=""></button>
+                        <button><img src="img/svg/bookmark.svg" alt=""></button>
                     </section>
-                    <span><b>1 like</b></span>
-                    <section class="post-text-container">
-                        <article>
-                            <div>
-                                <address>
-                                    <a href="">Karto4an</a>
-                                </address>
-                                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae aliquid facilis aut, praesentium tempore sequi quasi inventore commodi, nostrum vel, quo debitis impedit voluptatem? Quos dolorum quisquam recusandae qui?</p>
-                            </div>
-                        </article>
+                    <section class="post-social">
+                        <p>1232 likes</p>
+                        <div class="post-header"><a href="$username">Karto4an</a><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae aliquid facilis aut, praesentium tempore sequi quasi inventore commodi, nostrum vel, quo debitis impedit voluptatem?</span></div>
+                        <a href="$post">View all comments</a>
+                        <small><time datetime="2022-04-19 14:00">19 april 2022</time></small>
                     </section>
                 </footer>
             </article>
         </section>
-
-        <aside>
+        <aside class="side-panel">
             <section class="aside-suggestion">
                 <header>
                     <h2>You May Be Interested In</h2>
@@ -185,6 +103,5 @@
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 	<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/scroll.js"></script>
 </body>
 </html>
