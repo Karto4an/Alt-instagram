@@ -23,11 +23,9 @@
 }
 
 
-
 /* ****** */
 /*  FEED  */
 /* ****** */
-
 
 .post {
   width: 615px;
@@ -37,20 +35,20 @@
 .post header {
   height: 60px;
   display: flex;
+  padding: 0 12px 0 12px;
 
   background-color: tomato;
 }
 .post-profile-pic {
   width: 48px;
   height: 48px;
-  margin-left: 12px;
   border-radius: 50%;
 }
 .post-username {
   margin-left: 12px
 }
 .post-more-btn {
-  margin: 0 12px 0 auto;
+  margin-left: auto;
 }
 .post header * {
   margin-top: auto;
@@ -59,4 +57,27 @@
 
 img {
   display: block;
+}
+
+
+.post footer {
+  padding: 0 16px 16px 16px;
+}
+.post-controls {
+  padding: 10px 0 10px 0;
+  display: flex;
+  gap: 16px;
+
+}
+.post-controls button:last-of-type {
+  margin-left: auto;
+}
+
+.post-social {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.post-header span {
+  margin-left: 8px;
 }

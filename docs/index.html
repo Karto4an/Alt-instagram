@@ -12,19 +12,19 @@
     <header class="header">
 
             <nav>
-                <a href="#" class="nav-logo"><img src="img/logo.png" alt="AltInst Logo" width="48px" height="48px"></a>
+                <a href="#"><img src="img/logo.png" alt="AltInst Logo" width="48px" height="48px"></a>
                 <input type="search" name="Search" placeholder="Search" class="search">
-                <p class="wallet-address">0xA69...614</p>
-                <a href="#" class="nav-links"><img src="img/svg/home.svg" alt="Home Page"></a>
-                <a href="#" class="nav-links"><img src="img/svg/messages.svg" alt="Messages"></a>
-                <a href="#" class="nav-links"><img src="img/svg/plus.svg" alt="New Post"></a>
-                <a href="#" class="nav-links"><img src="img/svg/notification.svg" alt="Notification"></a>
-                <a href="#" class="nav-links"><img src="img/svg/user.svg" alt="Your Account"></a>
+                <p id="wallet-address">0xA69...614</p>
+                <a href="#"><img src="img/svg/home.svg" alt="Home Page"></a>
+                <a href="#"><img src="img/svg/messages.svg" alt="Messages"></a>
+                <a href="#"><img src="img/svg/plus.svg" alt="New Post"></a>
+                <a href="#"><img src="img/svg/notification.svg" alt="Notification"></a>
+                <a href="#"><img src="img/svg/user.svg" alt="Your Account"></a>
             </nav>
 
     </header>
-    <div class="main-content">
-        <main class="feed">
+    <main class="main-content">
+        <div class="feed">
             <article class="post">
                 <header>
                     <img src="img/profilepic.png" alt="$username" class="post-profile-pic">
@@ -33,24 +33,24 @@
                 </header>
                 <img src="img/test-pic.png" alt="BLANK" class="post-image">
                 <footer>
-                    <button>
-                        <img src="img/svg/heart.svg" alt="">
-                    </button>
-                    <button>
-                        <img src="img/svg/comments.svg" alt="">
-                    </button>
-                    <button>
-                        <img src="img/svg/share.svg" alt="">
-                    </button>
-                    <button>
-                        <img src="img/svg/bookmark.svg" alt="">
-                    </button>
+                    <section class="post-controls">
+                        <button><img src="img/svg/heart.svg" alt=""></button>
+                        <button><img src="img/svg/comments.svg" alt=""></button>
+                        <button><img src="img/svg/share.svg" alt=""></button>
+                        <button><img src="img/svg/bookmark.svg" alt=""></button>
+                    </section>
+                    <section class="post-social">
+                        <p>1232 likes</p>
+                        <div class="post-header"><a href="$username">Karto4an</a><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae aliquid facilis aut, praesentium tempore sequi quasi inventore commodi, nostrum vel, quo debitis impedit voluptatem?</span></div>
+                        <a href="$post">View all comments</a>
+                        <small><time datetime="2022-04-19 14:00">19 april 2022</time></small>
+                    </section>
                 </footer>
             </article>
-        </main>
+        </div>
         <aside class="side-panel">
-
+    </main>
         </aside>
-    </div>
+
 </body>
 </html>

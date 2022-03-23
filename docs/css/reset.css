@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  height: 100%;
 }
 a{
   text-decoration: none;
@@ -25,4 +26,10 @@ ul{
 }
 input{
   padding: 0;
+}
+figure{
+  margin: 0;
+}
+button{
+  display: block;
 }
