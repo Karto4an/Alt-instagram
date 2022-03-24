@@ -191,6 +191,17 @@ small{
 /*  LOGIN POPUP  */
 /* ************* */
 
+#popup-blocker {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.5);
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 #popup-login {
   background-color: #ffffff;
   width: max-content;
@@ -200,8 +211,8 @@ small{
   left: 50%;
   top: 50%;
   border-radius: 8px;
-  display: none;
   text-align: center;
+  display: none;
 }
 .show {
   display: block !important;
