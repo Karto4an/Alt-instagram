@@ -185,3 +185,43 @@ small{
 .aside-suggestion-list li{
   margin-top: 12px;
 }
+
+
+/* ************* */
+/*  LOGIN POPUP  */
+/* ************* */
+
+#popup-login {
+  background-color: #ffffff;
+  width: max-content;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  display: none;
+  text-align: center;
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+.metamask-icon {
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/svg/metamask.svg");
+  background-repeat: no-repeat;
+}
+#popup-login button {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  column-gap: 16px;
+
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  background-color: gainsboro;
+}
