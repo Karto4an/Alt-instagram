@@ -2,10 +2,12 @@
 
 const login_button = document.getElementById("account-login");
 const login_dialog = document.getElementById("popup-login");
+const body = document.getElementsByTagName("body")[0];
 
 login_button.addEventListener("click", event => {
     login_dialog.classList.add("show");
     popup_blocker.classList.add("show");
+    body.classList.add("lock");
 });
 
 
@@ -24,6 +26,7 @@ login_with_metamask_button.addEventListener("click", event => {
         providers_list.classList.remove("hide");
         popup_alert.classList.add("hide");
         popup_blocker.classList.remove("show");
+        body.classList.remove("lock");
         console.log("DONE");
     });
 });
@@ -34,4 +37,5 @@ login_with_metamask_button.addEventListener("click", event => {
 popup_blocker.addEventListener("click", event => {
     popup_blocker.classList.remove("show");
     login_dialog.classList.remove("show");
+    body.classList.remove("lock");
 });
